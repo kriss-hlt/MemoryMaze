@@ -80,7 +80,7 @@ public class MemoryMazeApplet extends Applet implements KeyListener {
         maze[playerY][playerX] = 0;
         maze[exitY][exitX] = 0;
 
-        // 🔥 CORRECCIÓN: asegurar que la meta esté conectada
+        //  CORRECCIÓN: asegurar que la meta esté conectada
         if (!(maze[exitY - 1][exitX] == 0 || maze[exitY][exitX - 1] == 0)) {
             if (Math.random() < 0.5) maze[exitY - 1][exitX] = 0;
             else maze[exitY][exitX - 1] = 0;
